@@ -9,7 +9,10 @@ $gray-light: lighten($gray-base, 46.7%); // #777
 $brand-primary: $gray-light;
 $text-color: black;
 
-$font-family-sans-serif: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-sans-serif: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-logo: 'Cairo', $font-family-sans-serif;
+$font-weight-logo: 200;
+$letter-spacing-logo: 0.033em;
 
 $header-height: 100px;
 
@@ -22,8 +25,7 @@ $header-height: 100px;
 @import 'bootstrap';
 
 body, button {
-  font-weight: lighter;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
 }
 
 header {
@@ -63,14 +65,16 @@ button {
 
 .footer-nav-heading {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .hero-header {
   position: relative;
-  height: 88vh;
+  height: 90vh;
 
   background-color: $gray-dark;
+  background-image: url('../images/stock/office.jpg');
+  background-size: cover;
 }
 
 .header-nav {
@@ -117,8 +121,9 @@ button {
   top: -5px;
   text-transform: none;
   font-size: 40px;
-  font-family: 'Hoefler Text Regular';
-  font-weight: light;
+  font-family: $font-family-logo;
+  font-weight: $font-weight-logo;
+  letter-spacing: $letter-spacing-logo;
 }
 
 .hero {
@@ -135,8 +140,7 @@ button {
   margin-bottom: 25px;
   font-size: 50px;
   text-transform: uppercase;
-  font-weight: lighter;
-  letter-spacing: 0.1em;
+  font-weight: 300;
 }
 
 .hero-subtitle {
