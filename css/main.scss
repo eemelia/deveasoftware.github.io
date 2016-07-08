@@ -245,8 +245,37 @@ a:hover button {
 }
 .primary-cta:hover {
   color: #fff;
+
 }
 
+.default-header {
+  background-color: $gray-dark;
+  background-image: url('../images/stock/office.jpg');
+  background-size: cover;
+  padding-bottom: 20px;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+}
 .row {
-  margin: 100px;
+  margin: 75px 0 0;
+  padding: 0 0 75px;
+}
+
+.break {
+  border-bottom: 1px solid #eee;
+}
+
+.references img {
+  max-width: 225px;
+  height: auto;
+}
+
+.text-item {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
 }
