@@ -236,3 +236,17 @@ a:hover button {
     color: $text-color-light;
   }
 }
+
+.primary-cta {
+  color: #fff;
+  padding: 5px 10px;
+  background: #e30030;
+  border-radius: 5px;
+}
+.primary-cta:hover {
+  color: #fff;
+}
+
+.row {
+  margin: 100px;
+}
