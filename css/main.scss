@@ -49,6 +49,10 @@ header {
   @include dark-background;
 }
 
+h2 {
+  margin-bottom: 23px;
+}
+
 a {
   text-decoration: inherit;
 
@@ -57,7 +61,7 @@ a {
   }
 }
 
-button {
+button, .btn {
   padding: 12px 22px;
   border: 1px solid $text-color-light;
   border-radius: 5px;
@@ -67,15 +71,23 @@ button {
   letter-spacing: 0.133em;
 }
 
-a button {
+a button, a .btn {
   color: $text-color-light;
   transition: background-color 0.2s, color 0.2s;
   transition-timing-function: ease-in-out;
 }
 
-a:hover button {
+a:hover button, a:hover .btn {
   background-color: $text-color-light;
   color: $text-color !important;
+}
+
+.btn-primary {
+  background: $logo-color;
+}
+.btn-primary:hover {
+  background: $background-color-light;
+  color: $logo-color;
 }
 
 .footer-nav {
@@ -237,17 +249,6 @@ a:hover button {
   }
 }
 
-.primary-cta {
-  color: #fff;
-  padding: 5px 10px;
-  background: #e30030;
-  border-radius: 5px;
-}
-.primary-cta:hover {
-  color: #fff;
-
-}
-
 .default-header {
   background-color: $gray-dark;
   background-image: url('../images/stock/office.jpg');
@@ -268,10 +269,14 @@ a:hover button {
 .break {
   border-bottom: 1px solid #eee;
 }
-
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
 .references img {
   max-width: 225px;
   height: auto;
+
 }
 
 .text-item {
