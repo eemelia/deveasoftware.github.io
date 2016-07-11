@@ -24,10 +24,8 @@ $letter-spacing-base: 0.066em;
 
 $header-height: 100px;
 
-@mixin dark-background {
-  background-color: $background-color-dark;
-  color: $text-color-light;
-}
+$customer-logo-width: 150px;
+$customer-logo-height: 70px;
 
 @mixin logo-style {
   font-family: $font-family-logo;
@@ -41,12 +39,17 @@ $header-height: 100px;
 @import 'fonts';
 @import 'bootstrap';
 
+.dark-background {
+  background-color: $background-color-dark;
+  color: $text-color-light;
+}
+
 body, address {
   letter-spacing: $letter-spacing-base;
 }
 
 header {
-  @include dark-background;
+  @extend .dark-background;
 }
 
 a {
@@ -57,25 +60,35 @@ a {
   }
 }
 
-button {
+.button-link {
   padding: 12px 22px;
-  border: 1px solid $text-color-light;
+  border: 1px solid $text-color;
   border-radius: 5px;
+  color: $text-color;
   background-color: transparent;
   text-transform: uppercase;
   font-size: 0.9 * $font-size-base;
   letter-spacing: 0.133em;
-}
 
-a button {
-  color: $text-color-light;
-  transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
   transition-timing-function: ease-in-out;
+
+  &:hover {
+    color: $text-color-light;
+    background-color: $logo-color;
+    border-color: $logo-color;
+  }
 }
 
-a:hover button {
-  background-color: $text-color-light;
-  color: $text-color !important;
+.dark-background .button-link {
+  color: $text-color-light;
+  border-color: $text-color-light;
+
+  &:hover {
+    color: $text-color;
+    background-color: $text-color-light;
+    border-color: $text-color-light;
+  }
 }
 
 .footer-nav {
@@ -235,4 +248,122 @@ a:hover button {
   a:hover & {
     color: $text-color-light;
   }
+}
+
+.main-container {
+  @extend .container-fluid;
+}
+
+.main-row {
+  @extend .row;
+  > * {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.product-col {
+  padding: 100px 0;
+
+  text-align: center;
+
+  h2 {
+    margin-top: 0;
+
+    text-transform: uppercase;
+  }
+
+  .subtitle {
+    margin-top: 20px;
+
+    font-size: 1.2 * $font-size-base;
+  }
+
+  .cta {
+    margin-top: 35px;
+  }
+}
+
+.scoring-col {
+  @extend .product-col, .col-md-6;
+}
+
+.billing-col {
+  @extend .product-col, .col-md-6;
+
+  background-color: $gray-lighter;
+}
+
+.customers-col {
+  padding: 25px 0;
+
+  text-align: center;
+
+  h2 {
+    margin-bottom: 50px;
+
+    text-transform: uppercase;
+    font-size: 1.4 * $font-size-base;
+  }
+}
+
+.customer-list {
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $screen-md-min) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.customer-logo {
+  width: $customer-logo-width;
+  height: $customer-logo-height;
+  margin: 10px 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $screen-md-min) {
+    margin: 0;
+  }
+}
+
+.kevennys-logo {
+  @extend .customer-logo;
+  background-image: url('/images/logos/kevennys.png');
+}
+.fyrklovern-logo {
+  @extend .customer-logo;
+  width: 1.2 * $customer-logo-width;
+  background-image: url('/images/logos/fyrklovern.png');
+}
+.apilanlehti-logo {
+  @extend .customer-logo;
+  width: 1.2 * $customer-logo-width;
+  background-image: url('/images/logos/apilanlehti.png');
+}
+.aaa-logo {
+  @extend .customer-logo;
+  width: 0.7 * $customer-logo-width;
+  background-image: url('/images/logos/aaa-bw.png');
+}
+.dili-logo {
+  @extend .customer-logo;
+  width: 0.4 * $customer-logo-width;
+  background-image: url('/images/logos/dili.png');
+}
+.vetvita-logo {
+  @extend .customer-logo;
+  width: 0.66 * $customer-logo-width;
+  background-image: url('/images/logos/vetvita.png');
+}
+.kg-logo {
+  @extend .customer-logo;
+  width: 0.4 * $customer-logo-width;
+  background-image: url('/images/logos/kg.png');
 }
