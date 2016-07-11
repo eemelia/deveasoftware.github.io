@@ -295,15 +295,19 @@ a {
 }
 
 .customers-col {
-  padding: 25px 0;
+  padding: 100px 0;
 
   text-align: center;
 
   h2 {
+    margin-top: 75px;
     margin-bottom: 50px;
 
     text-transform: uppercase;
-    font-size: 1.4 * $font-size-base;
+    font-size: 1.2 * $font-size-base;
+  }
+  h2:first-of-type {
+    margin-top: 0;
   }
 }
 
@@ -366,4 +370,16 @@ a {
   @extend .customer-logo;
   width: 0.4 * $customer-logo-width;
   background-image: url('/images/logos/kg.png');
+}
+.bisnode-logo {
+  @extend .customer-logo;
+  background-image: url('/images/logos/bisnode.png');
+}
+.alektum-logo {
+  @extend .customer-logo;
+  background-image: url('/images/logos/alektum.png');
+}
+.pectus-logo {
+  @extend .customer-logo;
+  background-image: url('/images/logos/pectus.png');
 }
