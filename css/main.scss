@@ -271,6 +271,7 @@ a {
     margin-top: 0;
 
     text-transform: uppercase;
+    font-size: 0.9 * $font-size-h2;
   }
 
   .subtitle {
@@ -295,6 +296,7 @@ a {
 }
 
 .customers-col {
+  @extend .col-md-12;
   padding: 100px 0;
 
   text-align: center;
@@ -382,4 +384,14 @@ a {
 .pectus-logo {
   @extend .customer-logo;
   background-image: url('/images/logos/pectus.png');
+}
+
+.contact-col {
+  @extend .col-md-12;
+
+  text-align: center;
+
+  h2 {
+    text-transform: uppercase;
+  }
 }
