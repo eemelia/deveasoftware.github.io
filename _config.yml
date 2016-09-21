@@ -8,8 +8,7 @@
 # Site settings
 title: Devea
 email: contact@devea.ai
-description: > # this means to ignore newlines until "baseurl:"
-  Increase your B2C telemarketing ROI with Devea Scoring
+description: Increase your B2C telemarketing ROI with Devea Scoring
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://devea.ai" # the base hostname & protocol for your site
 twitter_username: jekyllrb
