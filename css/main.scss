@@ -50,10 +50,13 @@ body, address {
 
 header {
   @extend .dark-background;
+<<<<<<< HEAD
 }
 
 h2 {
   margin-bottom: 23px;
+=======
+>>>>>>> DeveaSoftware/master
 }
 
 a {
@@ -65,7 +68,11 @@ a {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 button, .btn {
+=======
+.button-link {
+>>>>>>> DeveaSoftware/master
 =======
 .button-link {
 >>>>>>> DeveaSoftware/master
@@ -79,9 +86,13 @@ button, .btn {
   letter-spacing: 0.133em;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 a button, a .btn {
   color: $text-color-light;
   transition: background-color 0.2s, color 0.2s;
+=======
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+>>>>>>> DeveaSoftware/master
 =======
   transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 >>>>>>> DeveaSoftware/master
@@ -105,10 +116,13 @@ a button, a .btn {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 a:hover button, a:hover .btn {
   background-color: $text-color-light;
   color: $text-color !important;
 =======
+=======
+>>>>>>> DeveaSoftware/master
 .dark-background .button-link {
   color: $text-color-light;
   border-color: $text-color-light;
@@ -118,6 +132,7 @@ a:hover button, a:hover .btn {
     background-color: $text-color-light;
     border-color: $text-color-light;
   }
+<<<<<<< HEAD
 >>>>>>> DeveaSoftware/master
 }
 
@@ -127,6 +142,8 @@ a:hover button, a:hover .btn {
 .btn-primary:hover {
   background: $background-color-light;
   color: $logo-color;
+=======
+>>>>>>> DeveaSoftware/master
 }
 
 .footer-nav {
@@ -290,6 +307,7 @@ a:hover button, a:hover .btn {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .default-header {
   background-color: $gray-dark;
   background-image: url('../images/stock/office.jpg');
@@ -325,6 +343,8 @@ a:hover button, a:hover .btn {
   max-width: 480px;
   margin: 0 auto;
 =======
+=======
+>>>>>>> DeveaSoftware/master
 .main-container {
   @extend .container-fluid;
 }
@@ -469,5 +489,8 @@ a:hover button, a:hover .btn {
   h2 {
     text-transform: uppercase;
   }
+<<<<<<< HEAD
+>>>>>>> DeveaSoftware/master
+=======
 >>>>>>> DeveaSoftware/master
 }
